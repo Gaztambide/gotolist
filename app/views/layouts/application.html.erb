@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Todolist</title>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+  <div class="jumbotron">
+
+    <h1>To-do list!</h1>
+    <p> Making your life easier since 2016</p>
+    <p><a class="btn btn-primary btn-lg" href="http://localhost:3000/todo_items/new" role="button">Create new Item</a></p>
+    <!-- this link works here but would not work in production -->
+  </div>
+  <%= yield %>
+
+</body>
+</html>
